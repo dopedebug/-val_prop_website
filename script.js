@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img src="img/dog_prop.jpeg" alt="Scene 4">
                     </div>
                     <h1 class="glow">Great! 🥰</h1>
-                    <p>Can't wait for Valentine's Day with you!</p>
+                    <p>Can't wait for the coming Valentine's Day!</p>
                     <form id="emailForm">
                         <input type="text" id="usr_name" name="name" placeholder="Tell me your name" required>
                         <input type="submit" value="Send">
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             container.innerHTML = `
                 <div class="scene animate__animated animate__zoomOut" data-aos="zoom-out">
                     <div class="img-container">
-                        <img src="images/scene8.jpg" alt="Scene 8">
+                        <img src="img/crying_car.gif" alt="Scene 8">
                     </div>
                     <h1>😢 Guess it's not meant to be...</h1>
                 </div>
