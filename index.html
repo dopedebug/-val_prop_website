@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        body {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            animation: bounceIn 2s;
+        }
+        @keyframes bounceIn {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3);
+            }
+            20% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+            40% {
+                -webkit-transform: scale3d(.9, .9, .9);
+                transform: scale3d(.9, .9, .9);
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(1.03, 1.03, 1.03);
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            80% {
+                -webkit-transform: scale3d(.97, .97, .97);
+                transform: scale3d(.97, .97, .97);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        button {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="scene" id="scene1" data-aos="fade-up">
+            <div class="img-container">
+                <img src="img/car_rizz.jpeg" alt="Scene 1">
+            </div>
+            <h1>Okay so hey girl, hear me out</h1>
+            <button onclick="nextStep('1')">Yes</button>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
